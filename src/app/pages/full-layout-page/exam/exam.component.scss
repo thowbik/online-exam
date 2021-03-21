@@ -1,0 +1,323 @@
+.outer-layout {
+  margin: 1em !important; 
+  margin-top: 0px !important; 
+ }
+ .title-header {
+     text-align: center !important;
+     font-weight: bold;
+ }
+ 
+ .button-Layout-Gap {
+ 
+     margin-right: 30px !important;;
+ }
+ .options-layout {
+     display: flex;
+     margin-left: 5% !important;
+     margin-top: 2%;
+     flex-direction: row;
+     // align-items: center;
+     place-content: flex-start;
+ }
+ .start-button {
+     float: right !important;
+ }
+ .flex {
+     flex-direction: row;
+     align-items: center;
+     place-content: center;
+     margin-bottom: 10px;
+ }
+ .flex-column {
+     display: flex;
+ flex-direction: column;
+ align-items: center;
+ place-content: flex-start;
+ box-sizing: border-box;
+ display: flex;
+ place-content: flex-start center;
+ align-items: flex-start;
+ }
+ .flex-button {
+     float: right !important;
+     display: flex;
+     flex-direction: column;
+     padding: 10px;
+     // height: 70px;
+     width: 150px;
+     align-items: center;
+ }
+ .flex-row {
+     flex-direction: row;
+     display: flex;
+     align-items: center;
+     place-content: center;
+ }
+ .flex-left {
+     margin-left: 5em !important;
+ }
+ .unanswered-img {
+     width: 30px;
+     height: 20px;
+ }
+ .answered-img {
+     width: 20px;
+     height: 20px;
+ }
+ .flex-right
+ {
+     margin-right: 2em;
+ }
+ .status-box {
+     width: 32px;
+     height: 30px;
+     text-align: center;
+     margin: 4px;
+     cursor: pointer;
+     font-size: 14px;
+ }  
+ .float-left {
+     float: left;
+ }
+ body .ui-card {
+     background-color: #ffffff;
+     color: #333333;
+     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+     height: 100%;
+ }
+ .status-green {
+     background-color: green;
+     border-color: green; 
+     color: white;
+ }
+ .counter-hide {
+     display: none !important;
+ }
+ .counter-show {
+     display: block !important;
+ }
+ .status-layout {
+     height: 100% !important;
+     background-color: red;
+ }
+ .card-layout {
+     background-color: #ffffff;
+     color: #333333;
+     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+     height: 100%;
+ }
+ .exam-button-layout {
+     // margin-top: 1em;
+ }
+ .flex-gap-top {
+     margin-top: 10px;
+ }
+ .start-layout 
+ {
+     margin-bottom: 18px;
+ }  
+ .status-fixed-height {
+     height: 310px;
+ }
+ .status-red {
+     background-color: red !important;
+     border-color: red;
+     color: white;
+ }
+ .currentQuestion {
+     background-color:blue !important;
+     border-color: blue;
+     color: white;
+ }
+ .test {
+     width: 100%;
+     background-color: red;
+ }
+ .status-container {
+     background: gray;
+     width: 600px;
+     height: 200px; /* height given for illustration */
+     display: flex;
+     flex-flow: row wrap;
+     position: relative;
+   }
+   
+   .item {
+     background: blue;
+     margin: 4px;
+     flex: 0 1 calc(20% - 8px); /* <-- adjusting for margin */
+   }
+ .h-100 {
+     height: 400px;
+ }
+   @media screen and (max-width: 700px) {
+     .h-100 {
+         height: 460px;
+     }
+   }
+   .hide {
+       display: none !important;
+   }
+   .flex-start {
+     display: flex;
+     flex-direction: row;
+     box-sizing: border-box;
+     place-content: center flex-start;
+     align-items: center;
+   }
+   .flex-gap-top-50 {
+       margin-top: 50px;
+   }
+   .btn-warning {
+     color: #fff;
+ }
+   .btn-warning:hover {
+     color: #fff;
+ }
+ .modal-dialog {
+     max-width: 50%!important;
+ }
+ .status-box-info {
+     width: 15px;
+     height: 15px;
+     text-align: center;
+     margin: 0px;
+ }
+ .flex-box-text-center {
+     display: flex;
+     align-items: center;
+ }
+ .p-20 {
+     padding: 10px;
+ }
+ .flex-gap-right {
+     margin-right: 1em;
+ }
+ 
+ /*Loader Css */
+ .lds-spinner {
+     color: official;
+     display: inline-block;
+     position: relative;
+     width: 80px;
+     height: 80px;
+   }
+   .lds-spinner div {
+     transform-origin: 40px 40px;
+     animation: lds-spinner 1.2s linear infinite;
+   }
+   .lds-spinner div:after {
+     content: " ";
+     display: block;
+     position: absolute;
+     top: 3px;
+     left: 37px;
+     width: 6px;
+     height: 18px;
+     border-radius: 20%;
+     background: #fff;
+   }
+   .lds-spinner div:nth-child(1) {
+     transform: rotate(0deg);
+     animation-delay: -1.1s;
+   }
+   .lds-spinner div:nth-child(2) {
+     transform: rotate(30deg);
+     animation-delay: -1s;
+   }
+   .lds-spinner div:nth-child(3) {
+     transform: rotate(60deg);
+     animation-delay: -0.9s;
+   }
+   .lds-spinner div:nth-child(4) {
+     transform: rotate(90deg);
+     animation-delay: -0.8s;
+   }
+   .lds-spinner div:nth-child(5) {
+     transform: rotate(120deg);
+     animation-delay: -0.7s;
+   }
+   .lds-spinner div:nth-child(6) {
+     transform: rotate(150deg);
+     animation-delay: -0.6s;
+   }
+   .lds-spinner div:nth-child(7) {
+     transform: rotate(180deg);
+     animation-delay: -0.5s;
+   }
+   .lds-spinner div:nth-child(8) {
+     transform: rotate(210deg);
+     animation-delay: -0.4s;
+   }
+   .lds-spinner div:nth-child(9) {
+     transform: rotate(240deg);
+     animation-delay: -0.3s;
+   }
+   .lds-spinner div:nth-child(10) {
+     transform: rotate(270deg);
+     animation-delay: -0.2s;
+   }
+   .lds-spinner div:nth-child(11) {
+     transform: rotate(300deg);
+     animation-delay: -0.1s;
+   }
+   .lds-spinner div:nth-child(12) {
+     transform: rotate(330deg);
+     animation-delay: 0s;
+   }
+   @keyframes lds-spinner {
+     0% {
+       opacity: 1;
+     }
+     100% {
+       opacity: 0;
+     }
+   }
+   .flex-center-column {
+     display: flex;
+     align-items: center;
+     place-content: center;
+     flex-direction: column;
+   }
+   .loading-font {
+     font-size: 18px;
+     font-weight: 500;
+   }   
+   .counter-background {
+     position: fixed;
+     z-index: 1;
+     width: 100%;
+     background: linear-gradient(to bottom right, #fbf8dd, #f3efb6);
+     padding-right: 1em;
+   }   
+   @media screen and (max-width: 700px) {
+     .outer-layout {
+       margin: 0 !important;
+       margin-top: 0px !important;
+   }
+   .mobile-view-layer {
+     margin-top: 4em !important;
+   }
+   .exam-completed {
+    margin-top: 7em;
+  }
+   }
+   .quest-img {
+     width: 100%;
+   }
+   .flex-column-center{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     place-content: center;
+   }
+   .fixed-w-200 {
+     width: 200px;
+   }
+   .exam-completed {
+    margin-top: 2em;
+  }
+   
+ 
+ 
+ 

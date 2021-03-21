@@ -1,0 +1,114 @@
+.spinner {
+  margin: 100px auto !important;
+  width: 40px !important;
+  height: 40px !important;
+  position: relative !important;
+  text-align: center !important;
+  -webkit-animation: sk-rotate 2.0s infinite linear !important;
+  animation: sk-rotate 2.0s infinite linear !important;
+}
+
+// .dot1, .dot2 {
+//   width: 60%;
+//   height: 60%;
+//   display: inline-block;
+//   position: absolute;
+//   top: 0;
+//   background-color: #039BE5;
+//   border-radius: 100%;
+//   -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+//   animation: sk-bounce 2.0s infinite ease-in-out;
+// }
+
+// .dot2 {
+//   top: auto !important;
+//   bottom: 0 !important;
+//   -webkit-animation-delay: -1.0s !important;
+//   animation-delay: -1.0s !important;
+// }
+
+
+// .loader {
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   z-index: 1;
+//   width: 150px;
+//   height: 150px;
+//   margin: -75px 0 0 -75px;
+//   border: 16px solid #f3f3f3;
+//   border-radius: 50%;
+//   border-top: 16px solid #3498db;
+//   width: 120px;
+//   height: 120px;
+//   -webkit-animation: spin 2s linear infinite;
+//   animation: spin 3s linear infinite;
+// }
+
+// @-webkit-keyframes spin {
+//   0% { -webkit-transform: rotate(0deg); }
+//   100% { -webkit-transform: rotate(360deg); }
+// }
+
+// @keyframes spin {
+//   0% { transform: rotate(0deg); }
+//   100% { transform: rotate(360deg); }
+// }
+
+// /* Add animation to "page content" */
+// .animate-bottom {
+//   position: relative;
+//   -webkit-animation-name: animatebottom;
+//   -webkit-animation-duration: 1s;
+//   animation-name: animatebottom;
+//   animation-duration: 1s
+// }
+
+// @-webkit-keyframes animatebottom {
+//   from { bottom:-100px; opacity:0 } 
+//   to { bottom:0px; opacity:1 }
+// }
+
+// @keyframes animatebottom { 
+//   from{ bottom:-100px; opacity:0 } 
+//   to{ bottom:0; opacity:1 }
+// }
+
+// #myDiv {
+//   display: none;
+//   text-align: center;
+// }
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
+

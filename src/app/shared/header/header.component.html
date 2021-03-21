@@ -1,0 +1,99 @@
+<div class="content-header">
+    <div class="row w-100 l-0">
+        <div class="notification-block col-lg-5 padding-0">
+            <h3 class="text-center" style="font-size: 20px;"><img src="assets/img/exam.png" class="exam-img" alt="Exam Image" />Initial Learning Level Assessment</h3>
+         </div>
+    <div class="profile-band col-lg-7 flex">
+        <div class="col-lg-12 row">
+            <div class="col-lg-4">
+        <div class="profile-band-block">
+            <div class="profile-img">
+                <img src="assets/img/user.png" class="img-fluid" alt="Profile Image" />
+            </div>
+            <p>
+                <!-- <span>{{instDistrict}}</span> -->
+                <span>{{studentName}}</span>
+                <span class="f-12">{{className}} {{section}}</span>
+            </p>
+            
+        </div>
+            </div>
+            <div class="col-lg-7">
+        <div class="profile-band-block" style="display: flex;">
+            <div class="profile-img pro-sec">
+                <img src="assets/img/school-campus.svg" alt="Profile Image" />
+             
+            </div>
+            <p class="fixed-w">
+                <span class="break-word">{{schoolName}}</span>
+             
+            </p>
+        </div>
+            </div>
+            <div class="col-lg-1">
+        <div class="profile-band-block">
+            <div class="profile-img pro-sec url">
+                <i class="fa fa-sign-out" style="font-size: 25px;" aria-hidden="true" (click)="openBasicModal(basicModal)"></i>
+             
+            </div>
+        </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+</div>
+<!-- Page Section / Container -->
+
+
+<div class="page-title-section">
+    <!--Page title section-->
+    <!-- <div>
+        <button pButton type="button" label="Click" (click)="toggleSidebar()"></button>
+        <i class="pi pi-check" style="font-size: 3em"></i>
+        <span>abc</span>
+    </div> -->
+    <h6 style="font-size: 14px;font-size: 500;margin-left: 15px;margin-bottom: 0px;">   <img src="assets/img/books.png" style="    width: 50px;
+        height: 40px;" alt="Profile Image" />  <span>{{groupName}}</span></h6>
+    <!--breadcrumb section-->
+    <!-- <app-breadcrumb></app-breadcrumb> -->
+</div>
+<div class="page-title-section">
+    <!--Page title section-->
+    <!-- <div>
+        <button pButton type="button" label="Click" (click)="toggleSidebar()"></button>
+        <i class="pi pi-check" style="font-size: 3em"></i>
+        <span>abc</span>
+    </div> -->
+
+    <!--breadcrumb section-->
+    <!-- <app-breadcrumb></app-breadcrumb> -->
+</div>
+<!-- <p-confirmDialog #cd header="Confirmation" icon="pi pi-exclamation-triangle">
+    <p-footer>
+        <button type="button" pButton icon="pi pi-times" label="No" (click)="cd.reject()"></button>
+        <button type="button" pButton icon="pi pi-check" label="Yes" (click)="cd.accept()"></button>
+    </p-footer>
+</p-confirmDialog> -->
+<ng-template #basicModal let-modal>
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+      <button type="button" class="close" (click)="modal.close('cancel')" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <div class="col-md-12 text-center">
+         
+            <label style="font-style: italic;
+            color: red;margin-right: 10px;">If you Have not Completed the test, Your Answers will not be Saved! </label>
+        </div>
+        <h6 class="reg-title text-highlight text-center"> Are you sure you want to Logout ?</h6>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary url" (click)="modal.close('cancel')">No</button>
+      <button type="button" class="btn btn-primary url" (click)="modal.close('logout')">Yes</button>
+    </div>
+  </ng-template>
+

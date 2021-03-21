@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+.font-14 {
+    font-size: 14px;
+    line-height: 26px;
+}
+.counter-txt {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.br-12 {
+    border-radius: 12px !important;
+}
+#toast-container > div {
+    opacity:1;
+}
+.modal-dialog {
+    max-width: 80% !important;
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+}
+.url {
+cursor :pointer
+}
+
